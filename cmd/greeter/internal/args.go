@@ -30,7 +30,7 @@ func parseArgs(args []string) (Config, error) {
 
 	numTimes, err := strconv.Atoi(args[0])
 	if err != nil {
-		return c, nil
+		return c, err
 	}
 	c.numTimes = numTimes
 
